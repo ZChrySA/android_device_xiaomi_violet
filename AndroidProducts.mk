@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_violet.mk
+    $(LOCAL_DIR)/derp_violet.mk
