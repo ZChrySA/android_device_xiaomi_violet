@@ -19,15 +19,13 @@ import common
 import re
 
 def FullOTA_InstallEnd(info):
-  input_zip = info.input_zip
   OTA_UpdateFirmware(info)
-  OTA_InstallEnd(info, input_zip)
+  OTA_InstallEnd(info)
   return
 
 def IncrementalOTA_InstallEnd(info):
-  input_zip = info.target_zip
   OTA_UpdateFirmware(info)
-  OTA_InstallEnd(info, input_zip)
+  OTA_InstallEnd(info)
   return
 
 def OTA_UpdateFirmware(info):
