@@ -247,11 +247,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml
-
 # Radio
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
