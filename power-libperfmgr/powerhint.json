@@ -213,6 +213,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedFeatures",
+      "Path": "/sys/kernel/debug/sched_features",
+      "Values": [
+        "NO_ENERGY_AWARE",
+        "ENERGY_AWARE"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -420,6 +429,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "SchedFeatures",
+      "Duration": 5000,
+      "Value": "NO_ENERGY_AWARE"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
       "Value": "2016000"
@@ -498,6 +513,12 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
+      "Node": "SchedFeatures",
+      "Duration": 1000,
+      "Value": "NO_ENERGY_AWARE"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
       "Value": "2016000"
@@ -549,6 +570,12 @@
       "Node": "CPUBWIOPercent",
       "Duration": 0,
       "Value": "80"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "SchedFeatures",
+      "Duration": 1000,
+      "Value": "NO_ENERGY_AWARE"
     },
     {
       "PowerHint": "CAMERA_SHOT",
