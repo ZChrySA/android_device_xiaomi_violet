@@ -15,6 +15,8 @@ allow hal_power_default sysfs_devfreq:file { write };
 allow hal_power_default hal_power_default:capability { dac_override };
 allow hal_power_default latency_device:chr_file { write };
 allow hal_power_default latency_device:chr_file { open };
+allow hal_power_default input_device:dir { search };
+allow hal_power_default input_device:chr_file { rw_file_perms };
 
 # To get/set powerhal state property
 set_prop(hal_power_default, power_prop)
