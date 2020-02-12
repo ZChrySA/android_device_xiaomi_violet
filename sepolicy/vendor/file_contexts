@@ -23,3 +23,10 @@
 /(vendor|system/vendor)/bin/nv_mac           u:object_r:wcnss_service_exec:s0
 /(vendor|system/vendor)/bin/mlipayd@1\.1     u:object_r:hal_mlipay_default_exec:s0
 
+# Powerhal
+vendor.powerhal.state       u:object_r:power_prop:s0
+vendor.powerhal.audio       u:object_r:power_prop:s0
+vendor.powerhal.lpm         u:object_r:power_prop:s0
+vendor.powerhal.init        u:object_r:power_prop:s0
+vendor.powerhal.rendering   u:object_r:power_prop:s0
+
